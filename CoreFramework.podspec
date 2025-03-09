@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CoreFramework"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "CoreFramework foi desenvolvido para atender ao app Reminder como core de design e de components a serem utilizados pela equipe Reminder."
 
   # This description is used to generate tags and improve search results.
