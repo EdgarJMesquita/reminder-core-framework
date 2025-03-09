@@ -78,7 +78,17 @@ public class OnboardingView: UIView {
     }
     
     private func updateStep(){
-        messageLabel.text = steps[currentStep]
+        UIView.transition(
+            with: messageLabel,
+            duration: 0.5,
+            options: .transitionCrossDissolve,
+            animations: { [weak self] in
+                guard let self else { return }
+                messageLabel.text = steps[currentStep]
+             },
+            completion: nil
+        )
+        
     }
     
     private func dismiss(){
