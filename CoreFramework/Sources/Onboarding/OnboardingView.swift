@@ -9,8 +9,10 @@ import Foundation
 import UIKit
 
 public class OnboardingView: UIView {
+    
     private var steps: [String] = []
     private var currentStep = 0
+    
     
     private let backgroundView: UIView = {
         let view = UIView()
@@ -18,6 +20,7 @@ public class OnboardingView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     
     private let messageLabel: UILabel = {
         let label = UILabel()
@@ -29,6 +32,7 @@ public class OnboardingView: UIView {
         return label
     }()
     
+    
     private let nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Próximo", for: .normal)
@@ -39,14 +43,17 @@ public class OnboardingView: UIView {
         return button
     }()
     
+    
     public init() {
         super.init(frame: .zero)
         setupUI()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     @objc
     private func didTapNextStep(){
@@ -59,6 +66,7 @@ public class OnboardingView: UIView {
         }
         
     }
+    
     
     public func presentOnboarding(on view: UIView, with steps: [String]){
         self.steps = steps
@@ -77,6 +85,7 @@ public class OnboardingView: UIView {
         ])
     }
     
+    
     private func updateStep(){
         UIView.transition(
             with: messageLabel,
@@ -88,23 +97,26 @@ public class OnboardingView: UIView {
              },
             completion: nil
         )
-        
     }
+    
     
     private func dismiss(){
         removeFromSuperview()
     }
+    
     
     private func setupUI(){
         setupHierarchy()
         setupConstraints()
     }
     
+    
     private func setupHierarchy(){
         addSubview(backgroundView)
         addSubview(messageLabel)
         addSubview(nextButton)
     }
+    
     
     private func setupConstraints(){
         NSLayoutConstraint.activate([
@@ -115,19 +127,18 @@ public class OnboardingView: UIView {
             
             messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             messageLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Metrics.medium),
-            messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Metrics.medium),
-            
-            nextButton.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: Metrics.medium),
-            nextButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+
+            nextButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Metrics.medium),
+            nextButton.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
         ])
     }
+    
 }
 
 
 #Preview {
     let vc = UIViewController()
     let onboardingView = OnboardingView()
-    onboardingView.presentOnboarding(on: vc.view, with: ["Oi mundo ", "Como vai?"])
+    onboardingView.presentOnboarding(on: vc.view, with: ["Oi mundo ", "Como vai?","Message 2", "hasjhasuajs"])
     return vc
 }
