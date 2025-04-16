@@ -10,9 +10,9 @@
 		6D4EA25D2D7CC1FB0073F390 /* CoreFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EA25C2D7CC1FB0073F390 /* CoreFramework.docc */; };
 		6D4EA25E2D7CC1FB0073F390 /* CoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4EA25B2D7CC1FB0073F390 /* CoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D4EA2672D7CC4590073F390 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EA2662D7CC4590073F390 /* OnboardingView.swift */; };
-		6D4EA26D2D7CC6600073F390 /* Typograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EA26C2D7CC6600073F390 /* Typograph.swift */; };
 		6D4EA26F2D7CC6790073F390 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EA26E2D7CC6790073F390 /* Colors.swift */; };
 		6D4EA2712D7CC6B70073F390 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EA2702D7CC6B70073F390 /* Metrics.swift */; };
+		6DDB6ECB2DAFDEC7001491E9 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB6ECA2DAFDEC7001491E9 /* Typography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +20,9 @@
 		6D4EA25B2D7CC1FB0073F390 /* CoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreFramework.h; sourceTree = "<group>"; };
 		6D4EA25C2D7CC1FB0073F390 /* CoreFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CoreFramework.docc; sourceTree = "<group>"; };
 		6D4EA2662D7CC4590073F390 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		6D4EA26C2D7CC6600073F390 /* Typograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typograph.swift; sourceTree = "<group>"; };
 		6D4EA26E2D7CC6790073F390 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		6D4EA2702D7CC6B70073F390 /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		6DDB6ECA2DAFDEC7001491E9 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,7 @@
 		6D4EA26B2D7CC56E0073F390 /* Typograph */ = {
 			isa = PBXGroup;
 			children = (
-				6D4EA26C2D7CC6600073F390 /* Typograph.swift */,
+				6DDB6ECA2DAFDEC7001491E9 /* Typography.swift */,
 			);
 			path = Typograph;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D4EA26D2D7CC6600073F390 /* Typograph.swift in Sources */,
+				6DDB6ECB2DAFDEC7001491E9 /* Typography.swift in Sources */,
 				6D4EA26F2D7CC6790073F390 /* Colors.swift in Sources */,
 				6D4EA2712D7CC6B70073F390 /* Metrics.swift in Sources */,
 				6D4EA25D2D7CC1FB0073F390 /* CoreFramework.docc in Sources */,

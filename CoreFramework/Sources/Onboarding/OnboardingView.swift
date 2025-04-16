@@ -16,7 +16,7 @@ public class CFOnboardingView: UIView {
     
     private let backgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = Colors.gray100.withAlphaComponent(0.4)
+        view.backgroundColor = CFColors.gray100.withAlphaComponent(0.4)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -24,8 +24,8 @@ public class CFOnboardingView: UIView {
     
     private let messageLabel: UILabel = {
         let label = UILabel()
-        label.textColor = Colors.gray300
-        label.font = Typograph.heading
+        label.textColor = CFColors.gray300
+        label.font = CFTypography.heading
         label.numberOfLines = 0
         label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -36,8 +36,8 @@ public class CFOnboardingView: UIView {
     private let nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Próximo", for: .normal)
-        button.titleLabel?.font = Typograph.subHeading
-        button.setTitleColor(Colors.primaryRedBase, for: .normal)
+        button.titleLabel?.font = CFTypography.subHeading
+        button.setTitleColor(CFColors.primaryRedBase, for: .normal)
         button.addTarget(self, action: #selector(didTapNextStep), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -128,7 +128,7 @@ public class CFOnboardingView: UIView {
             messageLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             messageLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
 
-            nextButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Metrics.medium),
+            nextButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -CFMetrics.medium),
             nextButton.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor),
         ])
     }
