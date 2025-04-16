@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class OnboardingView: UIView {
+public class CFOnboardingView: UIView {
     
     private var steps: [String] = []
     private var currentStep = 0
@@ -133,12 +133,4 @@ public class OnboardingView: UIView {
         ])
     }
     
-}
-
-
-#Preview {
-    let vc = UIViewController()
-    let onboardingView = OnboardingView()
-    onboardingView.presentOnboarding(on: vc.view, with: ["Oi mundo ", "Como vai?","Message 2", "hasjhasuajs"])
-    return vc
 }

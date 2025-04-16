@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public struct Typograph {
+public struct Typography {
     static let heading = UIFont.systemFont(ofSize: 20, weight: .heavy)
     static let subHeading = UIFont.systemFont(ofSize: 16, weight: .heavy)
     static let input = UIFont.systemFont(ofSize: 16, weight: .regular)

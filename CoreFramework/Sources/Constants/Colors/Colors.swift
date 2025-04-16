@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public struct Colors {
+public struct CFColors {
     static let primaryRedBase = UIColor(hex: 0xC02636)
     static let secondaryRedLight = UIColor(hex: 0xEB3C4D)
     static let blueBase = UIColor(hex: 0x334FDC)
@@ -26,7 +26,7 @@ public struct Colors {
 
 
 extension UIColor {
-    convenience init(red: Int, green:Int, blue:Int){
+    public convenience init(red: Int, green:Int, blue:Int){
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
         assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -34,7 +34,7 @@ extension UIColor {
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
     
-    convenience init(hex: Int){
+    public convenience init(hex: Int){
         self.init(
             red: (hex >> 16) & 0xFF,
             green: (hex >> 8) & 0xFF,
