@@ -105,6 +105,7 @@
 		6D4EA25A2D7CC1FB0073F390 /* CoreFramework */ = {
 			isa = PBXGroup;
 			children = (
+				6DCD5FBD2DCE3EAC0003297B /* Resources */,
 				6D4EA2642D7CC43C0073F390 /* Sources */,
 				6D4EA25B2D7CC1FB0073F390 /* CoreFramework.h */,
 				6D4EA25C2D7CC1FB0073F390 /* CoreFramework.docc */,
@@ -119,7 +120,6 @@
 				6D2204002DCD43A20047DAAA /* ToggleCheckBox */,
 				6D4EA2682D7CC55B0073F390 /* Constants */,
 				6D4EA2652D7CC4400073F390 /* Onboarding */,
-				6D2204032DCD43F60047DAAA /* Assets.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -193,6 +193,14 @@
 				6DCD5FBB2DCE27BD0003297B /* CFButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		6DCD5FBD2DCE3EAC0003297B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D2204032DCD43F60047DAAA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

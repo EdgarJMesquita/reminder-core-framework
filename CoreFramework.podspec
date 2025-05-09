@@ -28,5 +28,8 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "CoreFramework/Sources/**/*.{swift,hx`}"
   spec.exclude_files = "Classes/Exclude"
+  spec.resource_bundles = {
+  'CoreFrameworkResources' => ['CoreFramework/Resources/**/*']
+}
 
 end
