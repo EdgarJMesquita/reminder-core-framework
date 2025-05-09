@@ -98,6 +98,6 @@ public protocol CFButtonDelegate: AnyObject {
 }
 
 
-#Preview {
-    CFButton(title: "HEYAAAA")
-}
+//#Preview {
+//    CFButton(title: "HEYAAAA")
+//}

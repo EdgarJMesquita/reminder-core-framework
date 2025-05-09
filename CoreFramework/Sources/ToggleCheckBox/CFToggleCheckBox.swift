@@ -10,8 +10,8 @@ import UIKit
 
 public class CFToggleCheckBox: UIButton {
     
-    private let checkedImage = UIImage.checked
-    private let uncheckedImage = UIImage.uncheck
+    var checkedImage: UIImage? = nil
+    var uncheckedImage: UIImage? = nil
     
     private(set) var isChecked: Bool = false {
         didSet {
@@ -19,11 +19,12 @@ public class CFToggleCheckBox: UIButton {
         }
     }
     
-    public convenience init(title: String){
+    public convenience init(title: String, checked: UIImage? = nil, unchecked: UIImage? = nil){
         self.init(frame: .zero)
         self.setTitle(title, for: .normal)
         self.setTitleColor(.black, for: .normal)
-        
+        self.checkedImage = checked
+        self.uncheckedImage = unchecked
         configuration = Configuration.plain()
         configuration?.imagePadding = 10
     }
@@ -60,6 +61,6 @@ public class CFToggleCheckBox: UIButton {
 }
 
 
-#Preview {
-    CFToggleCheckBox(title: "HEYAAAA")
-}
+//#Preview {
+//    CFToggleCheckBox(title: "HEYAAAA")
+//}

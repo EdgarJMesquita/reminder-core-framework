@@ -182,16 +182,16 @@ public class CFOnboardingView: UIView {
     
 }
 
-#Preview{
-    let vc = UIViewController()
-    let onboarding = CFOnboardingView()
-    onboarding.bounds = vc.view.bounds
-    let steps = [
-    (UIImage(named: "image1"),"Bem Vindo ao onboarding do Reminder"),
-    (UIImage(named: "image2"),"Para cadastrar seus remédios é super simples"),
-    (UIImage(named: "image3"),"Selecione o horário da primeira dose, e as subsequentes"),
-    (UIImage(named: "image4"),"Iremos te lembrar de tomar no horário correto."),
-    ]
-    onboarding.presentOnboarding(on: vc.view, with: steps)
-    return vc
-}
+//#Preview{
+//    let vc = UIViewController()
+//    let onboarding = CFOnboardingView()
+//    onboarding.bounds = vc.view.bounds
+//    let steps = [
+//    (UIImage(named: "image1"),"Bem Vindo ao onboarding do Reminder"),
+//    (UIImage(named: "image2"),"Para cadastrar seus remédios é super simples"),
+//    (UIImage(named: "image3"),"Selecione o horário da primeira dose, e as subsequentes"),
+//    (UIImage(named: "image4"),"Iremos te lembrar de tomar no horário correto."),
+//    ]
+//    onboarding.presentOnboarding(on: vc.view, with: steps)
+//    return vc
+//}
