@@ -25,8 +25,11 @@ public class CFToggleCheckBox: UIButton {
         self.setTitleColor(.black, for: .normal)
         self.checkedImage = checked
         self.uncheckedImage = unchecked
+        updateImage()
         configuration = Configuration.plain()
         configuration?.imagePadding = 10
+        configuration?.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        contentHorizontalAlignment = .left
     }
     
     override init(frame: CGRect) {
